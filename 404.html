@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ssss</title>
+        <link rel="icon" type="image/x-icon" href="https://ssss.lt/web_assets/logo_100.png">
+        <style>
+            /* @font-face {
+                font-family: "jetbrainsmono";
+                src: url("https://ssss.lt/web_assets/jetbrainsmono.ttf") format("truetype")
+            } */
+            html {
+                background-color: #000000;
+                color: #ffffff;
+                /* font-family: "JetBrains Mono", "jetbrainsmono", monospace */
+                font-family: "Arial", sans-serif;
+            }
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center
+            }
+            a, a:visited {
+                color: #c4c4c4;
+                text-decoration: none;
+            }
+            a:hover {
+                color: #ffffff;
+                text-decoration: underline;
+            }
+            nav a {
+                margin-left: 15px;
+                font-size: 3.75vh;
+                text-decoration: none;
+            }
+			img {
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				height: 21.333333vh;
+			}
+        </style>
+    </head>
+    <body>
+        <p>
+			an error occurred :(<br>
+			&lt;class 'requests.exceptions.HTTPError'&gt;<br>
+			404: not found<br>
+			<br>
+			please check the console for more details<br>
+			make sure you didnt make any typos, or go back to the <a href="https://ssss.lt">homepage</a>
+		</p>
+		<img src="https://ssss.lt/web_assets/error_image.png" alt="luci">
+        <script>
+            console.log("i didnt mean that literally thats just what it says on the ssss error screen. in the app and shit");
+            var audio = new Audio('https://ssss.lt/web_assets/error_audio.mp3');
+            document.onclick = function() {
+                audio.play();
+            };
+			audio.addEventListener('ended', function() {
+				this.currentTime = 0;
+				this.play();
+			}, false);
+        </script>
+    </body>
+</html>
